@@ -1,0 +1,14 @@
+input{
+    display: inline-block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+input:focus{
+    outline: none;
+}
+
+input .field{
+    border-bottom: 1px solid #fff;
+}

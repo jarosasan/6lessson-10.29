@@ -1,6 +1,71 @@
 @import 'normalize.css';
+@import 'fontawesome.min.css';
+@import 'form.css';
 @import 'button.css';
 @import 'clock.css';
 @import 'mouse.css';
 @import 'progress-bar.css';
-@import 'fontawesome.min.css';
+
+.container{
+    display: inline-block;
+    width: 100%;
+}
+
+.bg-color{
+    background-color: #02A9F4;
+}
+
+.bg-height {
+    height: 100vh;
+    background-image: url("../img/banner-1.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+/***************************************************
+* HERO *
+***************************************************/
+
+.hero{
+    display:inline-block;
+    width: 800px;
+    margin: 100px calc((100% - 800px) / 2) 20px;
+    text-align: center;
+    /*background-color: deeppink;*/
+}
+
+.hero>img{
+    margin-bottom: 60px;
+}
+
+.hero>h1{
+    display: inline-block;
+    width: 100%;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    text-transform:uppercase;
+}
+
+.hero>p{
+    display:inline-block;
+    width:100%;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: lighter;
+    color:gray;
+    margin-bottom: 60px;
+}
+
+.clock{
+    display:inline-block;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+form{
+    display: inline-block;
+    width: 90%;
+    margin: 0 5% 60px;
+}
