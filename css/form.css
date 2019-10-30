@@ -1,20 +1,20 @@
-.sub-form{
+.input-field{
     position: relative;
     font-weight: 200;
+    margin: 50px;
 }
-.sub-form>input{
+.input-field>input{
     display: inline-block;
     width: 100%;
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
     font-size: 18px;
-
     line-height: 30px;
     color: #474747;
 }
 
-.sub-form>label{
+.input-field>label{
     position: absolute;
     width: 100%;
     top:0;
@@ -29,7 +29,7 @@
 }
 
 
-.sub-form>input:focus{
+.input-field>input:focus{
     outline: none;
     border-bottom: 2px solid #fff;
 }

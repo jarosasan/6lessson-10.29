@@ -1,0 +1,16 @@
+.btn{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 40px;
+    box-shadow: 0 2px 5px black;
+    color: #fff;
+}
+
+.btn-red{
+    background-color: #EA3C64;
+}
+
+.btn:hover{
+    box-shadow: 0 4px 8px black;
+}

@@ -16,26 +16,28 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eum fugit laborum nam provident, quia sapiente temporibus veniam. At, eius!</p>
         <div class="clock">
             <div class="time">
-                <div class="value">99</div>
+                <div id="day" class="value"></div>
                 <div class="label">days</div>
             </div>
             <div class="time">
-                <div class="value">18</div>
+                <div id="hour" class="value">18</div>
                 <div class="label">hours</div>
             </div>
             <div class="time">
-                <div class="value">33</div>
+                <div id="min" class="value">33</div>
                 <div class="label">minutes</div>
             </div>
             <div class="time">
-                <div class="value">44</div>
+                <div id="sec" class="value">44</div>
                 <div class="label">seconds</div>
             </div>
         </div>
         <form class="sub-form">
-            <input id="field" type="email" name="email">
-            <label id="sub-label" class="s-label" for="email">Type your email</label>
-            <div class="btn">
+            <div class="input-field">
+                <input id="field" type="email" name="email">
+                <label id="sub-label" class="s-label" for="email">Type your email</label>
+            </div>
+            <div class="btn btn-red">
                 Subscribe now
             </div>
         </form>
