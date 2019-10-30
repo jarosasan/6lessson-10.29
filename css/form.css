@@ -1,14 +1,46 @@
-input{
+.sub-form{
+    position: relative;
+    font-weight: 200;
+}
+.sub-form>input{
     display: inline-block;
     width: 100%;
     border: none;
-    background-color: transparent;
-}
-
-input:focus{
-    outline: none;
-}
-
-input .field{
     border-bottom: 1px solid #fff;
+    background: transparent;
+    font-size: 18px;
+
+    line-height: 30px;
+    color: #474747;
 }
+
+.sub-form>label{
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+    text-align: left;
+    color: white;
+    cursor: text;
+    transition: 0.8s;
+}
+.s-label{
+    font-size: 20px;
+}
+
+
+.sub-form>input:focus{
+    outline: none;
+    border-bottom: 2px solid #fff;
+}
+
+
+
+.active{
+    font-size: 16px;
+    transform: translateY(-120%);
+    transition: 0.8s;
+
+}
+
+
