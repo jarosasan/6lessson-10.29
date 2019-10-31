@@ -15,10 +15,11 @@ input.addEventListener("focusout",function () {
 
 
 //Countdown timer
-    //Count douwn date
-    const countDownDate = new Date("Jan 01, 2020, 00:00:01").getTime();
+const nextYear = (new Date().getFullYear()) + 1;
 
-    const timer = setInterval(function(){
+const countDownDate = new Date("Jan 01, "+ nextYear +", 00:00:01").getTime();
+
+const timer = setInterval(function(){
 
     // Get today's date and time
     let now = new Date().getTime();
@@ -38,5 +39,9 @@ input.addEventListener("focusout",function () {
     const sec = document.getElementById('sec').innerHTML = seconds;
 
     // If the count down is finished, innerHTML = some tet
+
+        if(distance < 0){
+
+        }
 
 }, 1000);
