@@ -33,7 +33,25 @@
     overflow: hidden;
 }
  .full>.bar{
-     width: 90%;
+     width: 0;
+     height: 100%;
+ }
+
+.full>.bar>.loading{
      height: 100%;
      background-color: #02A9F4;
+     animation: progress-loader;
+     animation-duration: 1.5s;
+     animation-iteration-count: 1;
+    animation-delay: 1s;
+
  }
+
+@keyframes progress-loader {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100%;
+    }
+}
