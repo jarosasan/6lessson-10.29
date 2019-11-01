@@ -1,14 +1,26 @@
 .btn{
     display: inline-block;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 16px 40px;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 16px 24px;
+    min-width: 52px;
+    border-radius: 1px;
     box-shadow: 0 2px 5px black;
     color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .btn-red{
     background-color: #EA3C64;
+}
+
+.btn-round{
+    width: 54px;
+    padding: 16px 19px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .btn:hover{
