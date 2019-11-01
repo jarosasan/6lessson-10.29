@@ -1,0 +1,34 @@
+.mouse{
+    display: inline-block;
+    width: 24px;
+    height: 36px;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.mouse>.wheel{
+    display: inline-block;
+    background-color: white;
+    height:8px;
+    width: 2px;
+    margin-top: 0;
+    border-radius: 1.5px;
+    animation: scroll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    /*animation-direction: reverse;*/
+}
+
+@keyframes scroll {
+    0%{
+        margin-top: 5px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        margin-top: 18px;
+        opacity: 0;
+    }
+}
