@@ -1,16 +1,24 @@
 //Form input field
 //
-const label = document.getElementById('sub-label');
-const input = document.getElementById('field');
+// const label = document.getElementsByClassName('sub-label');
+// const input = document.getElementById('field');
 
-label.addEventListener("click", function () {
+document.addEventListener("click", function (event) {
+    if (!event.target.matches('.sub-label')) return;
+    event.preventDefault();
+    let label = event.target;
     label.classList.add("active");
+    const input = label.previousElementSibling;
     input.focus();
-});
+}, false);
 
-input.addEventListener("focusout",function () {
-    label.classList.remove("active");
-    input.value='';
+document.addEventListener("focusout",function (event) {
+    let input = event.target;
+    if(!input.value) {
+        const label = input.nextElementSibling;
+        label.classList.remove("active");
+        // input.value='';
+    }
 });
 
 

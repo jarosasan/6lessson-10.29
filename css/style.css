@@ -6,17 +6,23 @@
 @import 'mouse.css';
 @import 'progress-bar.css';
 
-html{
+html {
     overflow-y: scroll; /* has to be scroll, not auto */
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 }
-.container{
+
+body {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.container {
     display: inline-block;
     width: 100%;
 }
 
-.bg-color{
+.bg-color {
     background-color: #02A9F4;
 }
 
@@ -28,71 +34,80 @@ html{
     background-size: cover;
 }
 
+form {
+    display: inline-block;
+    width: 100%;
+}
+
 /***************************************************
 * HERO *
 ***************************************************/
 
-.hero{
-    display:inline-block;
+.hero {
+    display: inline-block;
     width: 600px;
     margin: 60px calc((100% - 600px) / 2) 0;
     text-align: center;
-    /*background-color: deeppink;*/
 }
 
-.hero>img{
+.hero > img {
     margin-bottom: 60px;
 }
 
-.hero>h1{
+.hero > h1 {
     display: inline-block;
     width: 100%;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 20px;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
-.hero>p{
-    display:inline-block;
-    width:100%;
-    font-size: 26px;
-    line-height: 30px;
-    font-weight: lighter;
-    color:gray;
-    margin-bottom: 50px;
-}
-
-.clock{
-    display:inline-block;
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-form{
+.hero > p {
     display: inline-block;
+    width: 100%;
+    font-size: 26px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    color: #8b8b8b;
+}
+
+.clock {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.hero>form {
     width: 90%;
-    margin: 0 5% 60px;
+    margin: 30px 5% 50px;
+}
+
+.hero .input-field label {
+    color: white;
+}
+
+.hero .input-field>input {
+    border-bottom-color: white;
 }
 
 /**************************************
 Content
 **************************************/
-.content{
+.content {
     display: inline-block;
     width: 1000px;
-    /*background-color: #EA3C64;*/
-    margin: 40px calc((100% - 1000px) / 2);
-
+    margin: 40px calc((100% - 1000px) / 2) 100px;
+    color: #BDBDBD;
 }
 
-.left{
+.left {
     display: inline-block;
     width: 50%;
-    float:left;
+    float: left;
 }
 
-.content h3{
+.content h3 {
     display: inline-block;
     width: 100%;
     font-size: 30px;
@@ -100,9 +115,10 @@ Content
     margin-bottom: 30px;
     text-transform: uppercase;
     font-weight: 400;
+    color: black;
 }
 
-.content .progress-bar{
+.content .progress-bar {
     display: inline-block;
     width: 100%;
 }
@@ -110,57 +126,99 @@ Content
 .content p {
     display: inline-block;
     width: 100%;
-    font-size: 18px;
-    line-height: 20px;
     margin-bottom: 40px;
-    color: gray;
 }
 
-.content p>a{
+.content p > a {
     text-decoration: none;
     color: #ff253a;
 }
 
 
-.right{
+.right {
     display: inline-block;
     width: 40%;
     float: right;
 }
 
+.message-form{
+    color: #8b8b8b;
+}
+ .message-form label[for="message"] {
+     padding-bottom: 25px;
+ }
+
+.message-form .inline-left{
+    display: inline-block;
+    width: 45%;
+}
+
+.message-form .inline-right{
+    display: inline-block;
+    width: 45%;
+    float:right;
+}
+
+.message-form input:focus+label,textarea:focus+label {
+    color: #02A9F4;
+}
+
+.message-form input,textarea {
+    border-bottom-color: #8b8b8b;
+}
+
+/*.message-form textarea {*/
+/*    min-height: 50px;*/
+/*    max-height: 300px;*/
+/*}*/
+
+.message-form input:focus,textarea:focus {
+    border-bottom-color: #02A9F4;
+}
+
+.message-form>.btn{
+    float: right;
+}
+
+
+
+
+
 /************************************
 Footer
 *************************************/
 
-footer{
+footer {
     display: inline-block;
-    width:100%;
+    width: 100%;
 }
 
 
-.footer-content{
-display: inline-block;
-position: relative;
-width: 1000px;
-margin: 20px calc((100% - 1000px) / 2) 50px;
+.footer-content {
+    display: inline-block;
+    position: relative;
+    width: 1000px;
+    margin: 20px calc((100% - 1000px) / 2) 50px;
+    color: #BDBDBD;
 }
 
-footer>.footer-content>.btn{
+footer > .footer-content > .btn {
     position: absolute;
-    top:-53px;
+    top: -53px;
     right: -20px;
 }
-.icon-bar{
+
+.icon-bar {
     display: inline-block;
-    width:100%;
+    width: 100%;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 1px solid #fff;
     text-align: center;
 }
 
-.icon-bar>a{
+.icon-bar > a {
     display: inline-block;
     width: 40px;
     padding: 10px;
@@ -171,7 +229,7 @@ footer>.footer-content>.btn{
     color: white;
 }
 
-.icon-bar>a:hover{
+.icon-bar > a:hover {
     background-color: #fff;
     color: #02A9F4;
     animation: slide-to-right;
@@ -181,45 +239,45 @@ footer>.footer-content>.btn{
     /*animation-direction: revert;*/
 }
 
-.icon-bar>a>i{
+.icon-bar > a > i {
     font-size: 18px;
     line-height: 20px;
     color: white;
 }
 
-.icon-bar>a:hover >i{
-    color: #02A9F4 ;
+.icon-bar > a:hover > i {
+    color: #02A9F4;
 }
 
-@keyframes  slide-to-right{
-    0%{
-        padding-left:0px;
+@keyframes slide-to-right {
+    0% {
+        padding-left: 0px;
     }
-    100%{
-        padding-left:15px;
+    100% {
+        padding-left: 15px;
     }
 }
 
-.credits{
+.credits {
     display: inline-block;
-    width:600px;
+    width: 600px;
     margin: 0 calc((100% - 600px) / 2) 40px;
     text-align: center;
     color: rgba(255, 255, 255, .6);
 }
 
-footer img{
+footer img {
     display: inline-block;
     margin-bottom: 20px;
 }
 
-.credits > div{
+.credits > div {
     display: inline-block;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.credits>div>span{
+.credits > div > span {
     display: inline-block;
 }
 
@@ -228,7 +286,7 @@ footer img{
     color: red;
 }
 
-.footer-content>p{
+.footer-content > p {
     display: inline-block;
-    width:100%
+    width: 100%
 }
