@@ -1,0 +1,112 @@
+@media (max-width: 1200px) {
+    .content {
+        width: 900px;
+        margin: 40px calc((100% - 900px) / 2) 100px;
+    }
+
+    .footer-content{
+        width: 900px;
+        margin: 20px calc((100% - 900px) / 2) 50px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content {
+        width: 700px;
+        margin: 40px calc((100% - 700px) / 2) 100px;
+        padding:0 10px;
+    }
+    .message-form .inline-right{
+        width: 100%;
+    }
+
+    .message-form .inline-left{
+        width: 100%;
+    }
+
+    .footer-content{
+        width: 700px;
+        margin: 20px calc((100% - 700px) / 2) 50px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero{
+        padding: 0 40px;
+    }
+
+    .content{
+        width: 600px;
+        margin: 50px calc((100% - 600px) / 2) 50px;
+        padding: 0 40px;
+    }
+    .content .left{
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .content .right{
+        width: 100%;
+        margin-top: 30px;
+        padding: 0 20px;
+    }
+
+    .footer-content{
+        width: 600px;
+        margin: 20px calc((100% - 600px) / 2) 50px;
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero{
+        width: 500px;
+        margin: 60px calc((100% - 500px) / 2) 0;
+        padding: 0 40px;
+    }
+
+    .clock{
+        margin-bottom: 0;
+    }
+
+    .clock>.time{
+        width:50%;
+        margin-bottom: 20px;
+    }
+
+    .content{
+        width: 500px;
+        margin: 50px calc((100% - 500px) / 2) 50px;
+        padding: 0 40px;
+    }
+    .content .left{
+        width: 100%;
+    }
+
+    .content .right{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .footer-content{
+        width: 500px;
+        margin: 20px calc((100% - 500px) / 2) 50px;
+        padding: 0 20px;
+    }
+
+    .footer-content .credits{
+        width: 500px;
+        margin: 0 calc((100% - 500px) / 2) 40px;
+
+    }
+     .footer-content>.btn{
+         display:none;
+     }
+
+    .footer-content>.credits>p {
+        padding:0 40px;
+    }
+
+}

@@ -91,6 +91,10 @@ form {
     border-bottom-color: white;
 }
 
+.hero .mouse{
+    margin-bottom: 20px;
+}
+
 /**************************************
 Content
 **************************************/
@@ -159,11 +163,12 @@ Content
     float:right;
 }
 
+
 .message-form input:focus+label,textarea:focus+label {
     color: #02A9F4;
 }
 
-.message-form input,textarea {
+.message-form input[type="text"],input[type="email"],textarea {
     border-bottom-color: #8b8b8b;
 }
 
@@ -286,7 +291,7 @@ footer img {
     color: red;
 }
 
-.footer-content > p {
+.footer-content>.credits > p {
     display: inline-block;
     width: 100%
 }

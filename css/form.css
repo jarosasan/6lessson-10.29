@@ -1,4 +1,6 @@
 .input-field {
+    display: inline-block;
+    width: 100%;
     position: relative;
     font-weight: 200;
     margin-bottom: 50px;
@@ -19,6 +21,8 @@
 }
 
 .input-field>textarea {
+    display: inline-block;
+    width: 100%;
     line-height: 20px;
     padding-bottom: 10px;
 }
