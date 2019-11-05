@@ -99,6 +99,7 @@
     .footer-content .credits{
         width: 400px;
         margin: 0 calc((100% - 400px) / 2) 40px;
+        padding: 0 40px;
 
     }
      .footer-content>.btn{
