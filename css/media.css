@@ -62,8 +62,8 @@
 
 @media (max-width: 600px) {
     .hero{
-        width: 500px;
-        margin: 60px calc((100% - 500px) / 2) 0;
+        width: 400px;
+        margin: 60px calc((100% - 400px) / 2) 0;
         padding: 0 40px;
     }
 
@@ -77,8 +77,8 @@
     }
 
     .content{
-        width: 500px;
-        margin: 50px calc((100% - 500px) / 2) 50px;
+        width: 400px;
+        margin: 50px calc((100% - 400px) / 2) 50px;
         padding: 0 40px;
     }
     .content .left{
@@ -91,14 +91,14 @@
     }
 
     .footer-content{
-        width: 500px;
-        margin: 20px calc((100% - 500px) / 2) 50px;
+        width: 400px;
+        margin: 20px calc((100% - 400px) / 2) 50px;
         padding: 0 20px;
     }
 
     .footer-content .credits{
-        width: 500px;
-        margin: 0 calc((100% - 500px) / 2) 40px;
+        width: 400px;
+        margin: 0 calc((100% - 400px) / 2) 40px;
 
     }
      .footer-content>.btn{
